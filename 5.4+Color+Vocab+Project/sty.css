@@ -1,0 +1,28 @@
+image{
+    height: 200px;
+    width: 200px;
+}
+body{
+    background-image: url("./assets/images/pexels-pixabay-235985.jpg");
+    background-attachment: fixed;
+  }
+#red{
+    color:red;
+}
+#blue{
+    color:blue;
+}
+#orange{
+    color:orange;
+}
+#green {
+    color: green;
+  }
+  
+  #yellow {
+    color: yellow;
+  }
+  .color-title{
+    font-weight:normal;
+  }
+ 

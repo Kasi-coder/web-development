@@ -1,0 +1,52 @@
+.box{
+    height: 200px;
+    width: 200px;
+    background-color: green;
+    position: absolute;
+   /* left: 125px;*/
+}
+.b2{
+    height: 500px;
+    width: 690px;
+    background-color: orange;
+    padding: 20px;
+    border: 20px solid skyblue;
+    margin: 20px;
+    position: relative;
+    
+   /* top: 30px;
+    right: 5px;
+    left: 30px;
+    */
+
+}
+.b3{
+    z-index: 1;
+    height: 200px;
+    width: 200px;
+    background-color: blue;
+   position: absolute;
+   right: 10px;
+   bottom: 10px;
+    
+    
+}
+.b4{
+    height: 100px;
+    width: 100px;
+    position: absolute;
+    background-color: red;
+    /*right: 0px;
+    bottom: 0px;*/
+    
+
+
+
+}
+.b5{
+    height: 100px;
+    width: 100px;
+    position: absolute;
+    background-color: grey;
+    
+}
