@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User registration Form</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            padding: 20px;
+        }
+        fieldset {
+            border: 2px solid #007BFF;
+            padding: 20px;
+            border-radius: 5px;
+        }
+        legend {
+            font-weight: bold;
+            font-size: 1.2em;
+        }
+        label {
+            display: block;
+            margin: 10px 0 5px;
+        }
+        input[type="text"], input[type="number"], select, textarea {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        button, input[type="submit"] {
+            background-color: #007BFF;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover, input[type="submit"]:hover {
+            background-color: #0056b3;
+        }
+        .checkbox-group {
+            display: flex;
+            flex-direction: column;
+        }
+    </style>
+</head>
+<body>
+
+<h1>User Registration Form</h1>
+
+<form action="#" method="post">
+    <fieldset>
+        <legend>Personal Information</legend>
+
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="age">Age:</label>
+        <input type="number" id="age" name="age" min="1" max="100" required>
+
+        <label>Gender:</label>
+        <label><input type="radio" name="gender" value="male" required> Male</label>
+        <label><input type="radio" name="gender" value="female" required> Female</label>
+        <label><input type="radio" name="gender" value="other" required> Other</label>
+
+        <label>Favorite Programming Languages:</label>
+        <div class="checkbox-group">
+            <label><input type="checkbox" name="languages" value="javascript"> JavaScript</label>
+            <label><input type="checkbox" name="languages" value="python"> Python</label>
+            <label><input type="checkbox" name="languages" value="java"> Java</label>
+            <label><input type="checkbox" name="languages" value="ruby"> Ruby</label>
+            <label><input type="checkbox" name="languages" value="csharp"> C#</label>
+            <label><input type="checkbox" name="languages" value="php"> PHP</label>
+        </div>
+
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" rows="4" placeholder="Write your message here..."></textarea>
+
+        <label for="suggestions">Suggestions (optional):</label>
+        <input list="suggestions" id="suggestionInput" name="suggestionInput">
+        <datalist id="suggestions">
+            <option value="Add more options">
+            <option value="Make it simpler">
+            <option value="Change the color scheme">
+        </datalist>
+
+        <output for="name age" id="outputArea"></output>
+    </fieldset>
+
+    <button type="button" onclick="alert('This button does not submit the form.')">Click Me</button>
+    <input type="submit" value="Submit">
+</form>
+
+
+</body>
+</html>
